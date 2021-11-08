@@ -9,7 +9,6 @@ Une section contenant les 4 menus sous forme cartes.
 Au clic sur la carte,
 l’utilisateur est redirigé vers la page du menu.
 
-et
 
 4 pages contenant chacune le menu d’un restaurant
 
