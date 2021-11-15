@@ -1,15 +1,15 @@
 body {
     border:3px solid black;
     margin: 0;
-
-
 }
-h1 {
 
+
+
+h1 {
     font-family: 'Shrikhand', cursive;
     font: Shrikhand;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 h2 {
     font-family: 'roboto', sans sans-serif;
@@ -21,7 +21,34 @@ h3 {
     font-weight: bold;
     font-size: 1,8rem;
 }
+header {
+    display: flex;
+    justify-content: center;
 
+}
+.localisation {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+.exploration {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #99E2D0;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center
+}
+.btn_tertiary {
+
+    border-radius: 40px;
+    background-color: #FF79DA;
+}
 .restaurant{
     display: flex;
     flex-direction: column;
@@ -39,3 +66,7 @@ h3 {
     width: 100%;
     height: 65%;
 }
+/*
+.bg-primary : #9356DC
+.bg-secondary:#FF79DA
+.bg-tertiary: #99E2D0
