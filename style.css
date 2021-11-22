@@ -35,6 +35,9 @@ img {
     object-fit: cover;
     width: 100%;
 }
+ul {
+    list-style-type: none;
+}
 
 /* index.html première partie : présentation */
 .localisation {
@@ -71,20 +74,33 @@ img {
 
 /* section fonctionnement*/
 .fonctionnement {
-    background
+    display: flex;
+    flex-direction: column;
 
+}
+.fonctionnement li {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
 }
 .btn_rond {
-    height:20px;
-    border-radius: 50px;
+    size: 200px;
+    border-radius: 200px;
 }
+.btn_item {
 
+}
 .fct_item  {
-
+    display : flex;
+    flex-direction: row;
     background-color: #d4d4d4;
-    background-position: left;
-    margin-left: : -10px;
-    height: 500px;
+    border-radius: 20px;
+    height: 80px;
+    width: 90%;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* section des restaurants */
@@ -148,7 +164,7 @@ img {
     width: 10%;
 }
 .fas .vide {
-    size : 50px;
+    color: white;
 }
 
 .fas .plein {
@@ -160,24 +176,20 @@ img {
     background-color: #4f4f4f;
     border: 3px solid black;
 }
+
 .logo_footer  {
     font-family: 'Shrikhand';
     font-size: 2rem;
-    margin-left: : 10px;
+
 }
-ul {
-    list-style-type: none;
-    padding-left: 10px;
-}
+
 .menu_footer li {
     line-height: 2,5rem;
     margin-top: 15px;
-    padding-left: 0px;
     justify-content: space-around;
 }
 .footer .fas {
     margin-right: 10px;
-
 }
 .bg-primary : #9356DC
 .bg-secondary:#FF79DA
