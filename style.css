@@ -19,12 +19,11 @@ h3 {
     font-family: 'roboto', sans sans-serif;
     font-weight: bold;
     font-size: 1,8rem;
-    padding: 0px 0px 10px 0px;
+
 }
 p {
     font-family: 'roboto';
     font-size: 1,8rem;
-    padding: 0px 0px 10px 10px;
 }
 header {
     display: flex;
@@ -99,7 +98,7 @@ img {
     background-color: #d4d4d4;
     justify-content: center;
     align-items: center;
-    border: 3px solid red;
+
 }
 
 .titre {
@@ -110,34 +109,61 @@ img {
 }
 
 .présentation_restaurant {
-    border: 3px solid red;
     display: flex;
     flex-direction: column;
-    width: 85%;
-    height: 400px;
+    width: 90%;
+    height: 350px;
     border-radius: 20px ;
     background-color: white;
     margin-bottom: 25px;
 }
-.présentation_restaurant a:hover {
-    border: 3px solid blue;
-}
+
 .présentation_restaurant img {
     object-fit: cover;
     width: 100%;
-    height: 70%;
+    height: 64%;
     border-radius: 20px 20px 0px 0px;
 }
+.restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.restaurant :hover {
+    border: 3px solid blue;
+}
+.nom_resto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width:80%;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+.fas .vide {
+    size : 50px;
+}
 
+.fas .plein {
+    color: #9356DC;
+    background-color: #9356DC;
+}
 .footer {
     color: white;
-    border: 3px solid red;
     background-color: #4f4f4f;
+    border: 3px solid black;
 }
-.logo_footer {
+.logo_footer  {
     font-family: 'Shrikhand';
     font-size: 2rem;
-    padding-left: : 00px;
+    margin-left: : 10px;
 }
 ul {
     list-style-type: none;
