@@ -12,22 +12,21 @@ h1 {
 h2 {
     font-family: 'roboto', sans sans-serif;
     font-weight: bold;
-    font-size: 1,8rem;
+    font-size: 1.8rem;
     /*padding: 15px;*/
 }
 h3 {
     font-family: 'roboto', sans-serif;
     font-weight: bold;
-    font-size: 1,8rem;
+    font-size: 1.8rem;
 }
 p {
     font-family: 'roboto';
-    font-size: 1,8rem;
+    font-size: 1.8rem;
 }
 header {
     display: flex;
     justify-content: center;
-
 }
 
 img {
@@ -40,12 +39,41 @@ ul {
 .padtop {
     padding-top: 25px;
 }
+.paddingleft {
+    padding-left: 15px;
+}
 .texttransform {
     text-transform: uppercase;
-    font-size: 1,5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
     font-family: 'roboto';
     text-decoration-line: underline;
+    text-decoration-color: #99E2D0;
+}
 
+.texttransresto {
+    font-family: 'Shrikhand';
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.texttransfoplat {
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.texttransformaccp {
+    font-family: 'roboto';
+    font-weight: 70;
+    font-size: 1.4rem;
+}
+.center {
+    text-align: center;
+    align-items: center;
+}
+.bold {
+    font-size: 1,9rem;
+    font-weight: bold;
+    text-align: justify;
 }
 /* index.html première partie : présentation */
 .presentation {
@@ -75,18 +103,7 @@ ul {
     align-items: center;
     border: 3px solid blue;
 }
-.center {
-    text-align: center;
-    align-items: center;
-}
-.bold {
-    font-size: 1,9rem;
-    font-weight: bold;
-    text-align: justify;
-}
-.paddingleft {
-    padding-left: 15px;
-}
+
 
 .btn_secondary {
         background-color: #FF79DA;
@@ -256,9 +273,17 @@ ul {
     margin-top: -30px;
 }
 .item_plat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
     border-radius: 20px;
     background-color: white;
     width : 95%;
     margin: 20px;
-
+    padding: 0px;
+    box-shadow: 3px 2px 2px black;
+}
+.item_plat :hover {
+    box-shadow: 6px 4px 4px black
 }
