@@ -19,10 +19,12 @@ h3 {
     font-family: 'roboto', sans-serif;
     font-weight: bold;
     font-size: 1.8rem;
+    padding: 0px;
 }
 p {
     font-family: 'roboto';
     font-size: 1.8rem;
+    padding: 0px;
 }
 header {
     display: flex;
@@ -35,6 +37,7 @@ img {
 }
 ul {
     list-style-type: none;
+    padding-inline-start: 0px;
 }
 .padtop {
     padding-top: 25px;
@@ -54,7 +57,7 @@ ul {
 .texttransresto {
     font-family: 'Shrikhand';
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
 }
 .texttransfoplat {
     font-family: 'roboto';
@@ -195,7 +198,7 @@ ul {
     height: 350px;
     border-radius: 20px ;
     background-color: white;
-    margin-bottom: 25px;
+
 }
 
 .présentation_restaurant img {
@@ -247,7 +250,7 @@ ul {
 
 .logo_footer  {
     font-family: 'Shrikhand';
-    font-size: 2rem;
+    font-size: 2.3rem;
 
 }
 
@@ -284,6 +287,22 @@ ul {
     padding: 0px;
     box-shadow: 3px 2px 2px black;
 }
-.item_plat :hover {
-    box-shadow: 6px 4px 4px black
+.menu :hover {
+    box-shadow: 6px 4px 4px black;
+    border-radius: 20px;
+}
+.plat {
+    width: 70%;
+}
+.prix {
+    display: flex;
+    width: 30%;
+}
+.prix_form {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'roboto';
+    align-items: center;
+    justify-content: center;
+
 }
