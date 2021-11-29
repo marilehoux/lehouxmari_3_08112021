@@ -34,6 +34,7 @@ header {
 img {
     object-fit: cover;
     width: 100%;
+    z-index: 0;
 }
 ul {
     list-style-type: none;
@@ -114,12 +115,27 @@ ul {
         border: none;
 }
 .btn_haut {
-    Height: 40px;
+    Height: 50px;
     border-radius: 30px;
     padding: 20px;
 }
 .btn_center {
     margin: 30px;
+    align-items: center;
+}
+.btn_rond {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    margin-right: -15px;
+    z-index: 2;
+    }
+.btn_item {
+    height: 50px;
+}
+
+.btn_com {
+    width: 200px;
 }
 /* section fonctionnement*/
 .fonctionnement {
@@ -143,35 +159,41 @@ ul {
     align-content: center;
     padding-bottom: 20px;
 }
-.btn_rond {
-    height: 30px;
-    width: 30px;
-    border-radius: 100px;
-    margin-right: -15px;
-    }
-.btn_item {
-    height: 40px;
 
-}
 .item  {
     display : flex;
     flex-direction: row;
     background-color: #d4d4d4;
     border-radius: 25px;
-    height: 60px;
+    height: 70px;
     width: 90%;
     padding-left: -15px;
     align-items: center;
     justify-content: flex-start;
+}
+.item :hover {
+    display : flex;
+    flex-direction: row;
+    background-color: #8bbde0;
+    border-radius: 25px;
+    height: 70px;
+    width: 90%;
+    padding-left: -15px;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 .icn {
     color:#bababa;
     padding-right: 30px;
     padding-left:30px;
 }
+.icn :hover {
+    color: #FF79DA;
+}
 /* section des restaurants */
 
-
+*/
 .restaurants {
     display: flex;
     flex-direction: column;
@@ -263,17 +285,21 @@ ul {
     margin-right: 10px;
 }
 /*
-.bg-primary : #9356DC
-.bg-secondary:#FF79DA
-.bg-tertiary: #99E2D0
+.bg-primary : #9356DCtrès violet
+.bg-secondary:#FF79DA violet
+.bg-tertiary: #99E2D0 vert
 */
 /* les menus_html*/
+.image_restaurant img {
+    z-index: -1;
+}
 .menu {
     display: flex;
     flex-direction: column;
     background-color: #bababa;
-    border-radius: 40px;
-    margin-top: -30px;
+    border-radius: 40px 40px 0px 0px;;
+    margin-top: -65px;
+    z-index: 502;
 }
 .item_plat {
     display: flex;
