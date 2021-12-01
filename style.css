@@ -30,12 +30,13 @@ header {
     display: flex;
     justify-content: center;
 }
-
+/*
 img {
     object-fit: cover;
     width: 100%;
     z-index: 0;
 }
+*/
 ul {
     list-style-type: none;
     padding-inline-start: 0px;
@@ -171,7 +172,7 @@ ul {
     align-items: center;
     justify-content: flex-start;
 }
-.item :hover {
+.item:hover {
     display : flex;
     flex-direction: row;
     background-color: #8bbde0;
@@ -181,6 +182,7 @@ ul {
     padding-left: -15px;
     align-items: center;
     justify-content: flex-start;
+    color: #FF79DA;
 
 }
 .icn {
@@ -188,7 +190,7 @@ ul {
     padding-right: 30px;
     padding-left:30px;
 }
-.icn :hover {
+.icn:hover {
     color: #FF79DA;
 }
 /* section des restaurants */
@@ -196,6 +198,7 @@ ul {
 */
 .restaurants {
     display: flex;
+
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -213,21 +216,35 @@ ul {
     font-size: 1,8rem;
 }
 */
-.présentation_restaurant {
+
+.presentation_restaurant {
     display: flex;
     flex-direction: column;
     width: 90%;
     height: 350px;
     border-radius: 20px ;
     background-color: white;
-
 }
 
-.présentation_restaurant img {
+.presentation_restaurant a {
+    display:block;
+/*
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+    height: 150px;
+    border-radius: 20px ;
+    background-color: white;
+    */
+}
+.presentation_restaurant img {
     object-fit: cover;
     width: 100%;
-    height: 64%;
+    height: 80%;
     border-radius: 20px 20px 0px 0px;
+}
+.presentation_restaurant:hover {
+    border: 3px solid blue;
 }
 .restaurant {
     display: flex;
@@ -237,9 +254,7 @@ ul {
     align-items: center;
     width: 100%;
 }
-.restaurant :hover {
-    border: 3px solid blue;
-}
+
 .nom_resto {
     display: flex;
     flex-direction: column;
@@ -291,7 +306,10 @@ ul {
 */
 /* les menus_html*/
 .image_restaurant img {
+    object-fit: cover;
+    width: 100%;
     z-index: -1;
+
 }
 .menu {
     display: flex;
@@ -311,10 +329,10 @@ ul {
     width : 95%;
     margin: 20px;
     padding: 0px;
-    box-shadow: 3px 2px 2px black;
+    box-shadow: 2px 1px 1px black;
 }
-.menu :hover {
-    box-shadow: 6px 4px 4px black;
+.item_plat:hover {
+    box-shadow: 8px 6px 6px black;
     border-radius: 20px;
 }
 .plat {
