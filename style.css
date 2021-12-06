@@ -49,11 +49,20 @@ ul {
 }
 .texttransform {
     text-transform: uppercase;
+    position: relative;
     font-size: 1.5rem;
     font-weight: 100;
     font-family: 'roboto';
     padding-bottom: 10px;
-    border-bottom: 2px solid #99E2D0;
+
+}
+.texttransform:before{
+    content:"";
+    position: absolute;
+    width: 50px;
+    padding-bottom: 40px;
+    border-bottom: 3px solid #99E2D0;
+
 }
 
 .texttransresto {
