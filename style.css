@@ -311,6 +311,10 @@ ul {
 .footer .fas {
     margin-right: 10px;
 }
+.lienfooter {
+    text-decoration: none;
+    color: white;
+}
 /*
 .bg-primary : #9356DCtrès violet
 .bg-secondary:#FF79DA violet
