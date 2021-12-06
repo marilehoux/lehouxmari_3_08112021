@@ -203,19 +203,7 @@ ul {
 .icn:hover {
     color: #FF79DA;
 }
-/* section des restaurants */
-
-*/
-/*
-.restau {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #d4d4d4;
-    align-content: center;
-}
-*/
+/* section restaurant */
 .menu_res {
     background-color: grey;
     display: flex;
@@ -283,13 +271,25 @@ ul {
     width: 10%;
 }
 .vide {
-    color: white;
+    font-size: 1.5rem;
+    display: none;
+
+    /*
     background-color: #FF79DA;
+    */
 }
 
 .plein {
+    font-size: 1.5rem;
+    color: grey;
+    /*
     color: black;
     background-color: #bababa;
+    */
+}
+.icon:hover {
+    background-color: #FF79DA;
+    color:#FF79DA;
 }
 .footer {
     color: white;
