@@ -468,7 +468,7 @@ ul {
   justify-content: space-around;
 }
 .presentation_restaurant {
-width : 600px;
+width : 450px;
 }
 .list_plat {
   display:flex;
@@ -490,4 +490,8 @@ width : 600px;
 }
 
 */
+@media all and (min-width: 1346px){
+  .presentation_restaurant {
+  width : 600px;
+  }
 }
