@@ -368,7 +368,7 @@ ul {
     align-content: space-around;
     border-radius: 20px;
     background-color: white;
-    width : 95%;
+
     margin: 10px;
     padding: 0px;
     box-shadow: 2px 1px 1px black;
@@ -382,7 +382,7 @@ ul {
 }
 .prix {
     display: flex;
-    width: 30%;
+    width: 20%;
 }
 .prix_form {
     font-size: 1.8rem;
@@ -409,16 +409,27 @@ ul {
 .special {
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
-    justify-content: flex-start;
-    padding-left: 50px;
+    justify-content: center;
+    padding-left: 0px;
 }
 
 .special_titre {
-  padding-left: 250px;
+  padding-left: 25px;
 }
+/*
+@media all and (max-width: 500px){
 
+.special_titre {
+  font-size: 1.5rem;
+}
+}
+*/
 @media all and (min-width: 1024px){
+  .special_titre{
+    padding-left: 20px;
+  }
   .footer {
     display:flex;
     flex-direction:column;
@@ -458,6 +469,18 @@ ul {
 }
 .presentation_restaurant {
 width : 600px;
+}
+.list_plat {
+  display:flex;
+  flex-direction: row;
+}
+.item_plat {
+  width:33%;
+}
+/*
+.menu {
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 */
 /*
