@@ -169,6 +169,7 @@ ul {
 .fonctionnement ul {
     margin:0;
     padding:0;
+
 }
 .fonctionnement li {
     display:flex;
@@ -360,7 +361,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: flex-start;
+    align-content: space-around;
     border-radius: 20px;
     background-color: white;
     width : 95%;
@@ -411,4 +412,47 @@ ul {
 
 .special_titre {
   padding-left: 250px;
+}
+
+@media all and (min-width: 1024px){
+  .footer {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .footer_list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+  }
+.footer_li {
+  margin: 40px;
+  padding: 20px;
+}
+.fonctionnement {
+  align-items: center;
+}
+.fonctionnement ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.fonctionnement li {
+  width: 400px;
+}
+
+.menu_res {
+  flex-direction: row;
+}
+*/
+/*
+.presentation_restaurant {
+  flex-direction: row;
+
+}
+
+*/
 }
