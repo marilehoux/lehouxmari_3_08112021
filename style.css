@@ -12,7 +12,7 @@ h1 {
 h2 {
     font-family: 'roboto', sans sans-serif;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     /*padding: 15px;*/
 }
 h3 {
@@ -143,10 +143,20 @@ ul {
 }
 
 .btn_com {
-    width: 200px;
+  width: 250px;
+  font-size: 1.6rem;
+
 }
 .btn_largeur{
     width: 120px;
+}
+.btn_commande {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
 }
 /* section fonctionnement*/
 .fonctionnement {
@@ -213,6 +223,11 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
+.menu_res h2 {
+  align-items: flex-start;
+
+}
+
 .presentation_restaurant {
     display: flex;
     flex-direction: column;
@@ -223,6 +238,9 @@ ul {
     box-shadow: 5px 3px 3px black;
     text-decoration: none;
     color: black;
+    margin: 10px;
+
+
 }
 /*
 .presentation_restaurant a {
@@ -240,7 +258,7 @@ ul {
 .presentation_restaurant img {
     object-fit: cover;
     width: 100%;
-    height: 65%;
+    height: 350px;
     border-radius: 20px 20px 0px 0px;
     text-decoration: none;
 }
@@ -326,7 +344,7 @@ ul {
     object-fit: cover;
     width: 100%;
     z-index: -1;
-    height: 400px;
+    height: 385px;
     position: absolute;
 
 }
@@ -335,7 +353,7 @@ ul {
     flex-direction: column;
     background-color: #bababa;
     border-radius: 40px 40px 0px 0px;;
-    margin-top: 395px;
+    margin-top: 370px;
     z-index: 10;
 }
 .item_plat {
