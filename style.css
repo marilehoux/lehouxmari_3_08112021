@@ -405,5 +405,10 @@ ul {
     display:flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.special_titre {
+  padding-left: 250px;
 }
