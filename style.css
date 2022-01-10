@@ -338,7 +338,7 @@ ul {
 */
 
 .plein:hover {
-  transform: scale(1.9); opacity:1; color:#FF79DA;
+  transform: scale(1.6); opacity:1; color:#FF79DA;
   }
   /*
 .icon {
@@ -434,6 +434,25 @@ transition: 400ms;
     align-items: center;
     justify-content: center;
 
+}
+.checked {
+  display: flex;
+  align-content:center;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  width: 120px;
+  border-radius: 0px 20px 20px 0px;
+  z-index: 100;
+  opacity: 0.20
+
+}
+.anim {
+  font-size: 4rem;
+  color: white;
+}
+.checked:hover {
+  display:contents;
 }
 /*
 .lien_index {
