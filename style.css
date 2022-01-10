@@ -304,40 +304,41 @@ ul {
     align-items: center;
     width: 15%;
 }
-.icon fas {
-  display:none;
-}
+
 .vide {
+  position: absolute;
+  /*
     position: absolute;
-    z-index: 100;
-    font-size: 1.6rem;
-    color: #FF79DA;
-
-
+    top: 100px; left:100px;
+    */
+    z-index: 50;
+    font-size: 1.8rem;
+    color: black;
+    transition : 400ms;
 }
 
-.vide:hover {
-  z-index:20;
-  display: none;
-}
 
 .plein {
-  display:none;
-  position: relative;
-  z-index: 40;
-  font-size: 1.6rem;
-  color: #FF79DA;
-  transition: 400ms;
+ position: absolute;
+  /*position: absolute;
+  top: 20px; left:20px;
+  */
+  opacity:0;
+  z-index: 100;
+  font-size: 1.7rem;
+  color: white;
+  transition: all 400ms;
 
 }
-
+/*
 .plein:active {
 
  transform:  position: relative; scale(1.8); z-index: 100; color: #FF79DA;
 }
+*/
 
 .plein:hover {
-  transform: scale(2); visibility: visible; color:#FF79DA;
+  transform: scale(1.9); opacity:1; color:#FF79DA;
   }
   /*
 .icon {
