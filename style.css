@@ -135,6 +135,13 @@ ul {
 .btn_center {
     margin: 30px;
     align-items: center;
+    box-shadow:  2px 1px 1px  grey;
+    transition: transform 400ms;
+
+}
+.btn_center:hover {
+  cursor: pointer;
+  transform: scale(1.15); box-shadow: 4px 2px 2px  black; background-color: #ff91e1;
 
 }
 .btn_rond {
@@ -151,7 +158,10 @@ ul {
 .btn_com {
   width: 250px;
   font-size: 1.6rem;
-
+}
+.btn_explo {
+  width: 350px;
+  font-size: 1.5rem;
 }
 .btn_largeur{
     width: 120px;
@@ -294,27 +304,50 @@ ul {
     align-items: center;
     width: 15%;
 }
+.icon fas {
+  display:none;
+}
 .vide {
-    font-size: 1.5rem;
-    display: none;
+    position: absolute;
+    z-index: 100;
+    font-size: 1.6rem;
+    color: #FF79DA;
 
-    /*
-    background-color: #FF79DA;
-    */
+
+}
+
+.vide:hover {
+  z-index:20;
+  display: none;
 }
 
 .plein {
-    font-size: 1.5rem;
-    color: grey;
-    /*
-    color: black;
-    background-color: #bababa;
-    */
+  display:none;
+  position: relative;
+  z-index: 40;
+  font-size: 1.6rem;
+  color: #FF79DA;
+  transition: 400ms;
+
+}
+
+.plein:active {
+
+ transform:  position: relative; scale(1.8); z-index: 100; color: #FF79DA;
+}
+
+.plein:hover {
+  transform: scale(2); visibility: visible; color:#FF79DA;
+  }
+  /*
+.icon {
+transition: 400ms;
 }
 .icon:hover {
-    background-color: #FF79DA;
-    color:#FF79DA;
+
+    transform: color:#FF79DA;
 }
+*/
 .footer {
     color: white;
     background-color: #4f4f4f;
@@ -338,6 +371,15 @@ ul {
 .lienfooter {
     text-decoration: none;
     color: white;
+}
+.mail{
+  text-decoration: none;
+  color: white;
+  transition: transform 400ms;
+}
+
+.mail:hover {
+  transform: scale(2); color: #99E2D0; font-size: 1.8rem;
 }
 /*
 .bg-primary : #9356DCtrès violet
