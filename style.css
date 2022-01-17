@@ -121,7 +121,25 @@ ul {
   }
 }
 */
+@@keyframes loading {
 
+  0%{
+    opacity:0;
+  }
+  25%{
+    opacity:0.25;
+  }
+  50%{
+    opacity:0.5;
+  }
+  75%{
+    opacity:0.75;
+  }
+  100%{
+    100%:1;
+  }
+
+}
 @keyframes affichage {
   from{
     opacity:0;
@@ -130,6 +148,19 @@ ul {
     opacity:1;
   }
 }
+
+@keyframes checked{
+    0% {
+        display:none;
+        transform: translateX(+9999px);
+    }
+    100% {
+        display:content;
+        transform: translateX(0);
+    }
+}
+
+
 
 
 .padtop {
@@ -183,7 +214,7 @@ ul {
 /* index.html première partie : présentation */
 .presentation {
 
-    animation-duration: 1000ms;
+    animation-duration: 3000ms;
     animation-name: affichage;
 
     display: flex;
@@ -431,10 +462,11 @@ ul {
   opacity:0;
   z-index: 100;
   font-size: 1.8rem;
-  color:#FF79DA;
+  color:white;
 
   transition: all 2000ms ease-in-out;
   transform-origin: bottom;
+  transition-property:color;
 
 }
 
@@ -446,7 +478,8 @@ ul {
 */
 
 .plein:hover {
-  transform: scale(1.2); opacity:1;
+  transform: scaleX(1.1); opacity:1; color:#FF79DA;
+
   }
   /*
 .icon {
@@ -514,8 +547,10 @@ transition: 400ms;
 }
 
 .item_plat {
+
     animation-duration: 6s;
     animation-name: affichage;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -528,9 +563,36 @@ transition: 400ms;
     box-shadow: 2px 1px 1px black;
 }
 .item_plat:hover {
+    animation-name: checked;
     box-shadow: 8px 6px 6px black;
     border-radius: 20px;
+    /*
+    &__checked {
+      display: flex;
+      align-content:center;
+      justify-content: center;
+      align-items: center;
+      background-color: #99E2D0;
+      width: 120px;
+      border-radius: 0px 20px 20px 0px;
+      z-index: 3100;
+      opacity: 1;
+    }
+    */
 }
+/*
+.item_plat__checked:hover{
+  display: flex;
+  align-content:center;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 120px;
+  border-radius: 0px 20px 20px 0px;
+  z-index: 3100;
+  opacity: 1;
+}
+*/
 .plat {
     width: 70%;
 }
@@ -546,11 +608,21 @@ transition: 400ms;
     justify-content: center;
 
 }
+/*
 .checked{
   display:none;
 }
-/*
+*/
+
 .checked {
+/*
+  animation-name: checked;
+  animation-duration: 3s;
+*/
+  /*
+  display:none;
+  */
+
   display: flex;
   align-content:center;
   justify-content: center;
@@ -558,10 +630,11 @@ transition: 400ms;
   background-color: #99E2D0;
   width: 120px;
   border-radius: 0px 20px 20px 0px;
-  z-index: 100;
-  opacity: 0;
+  z-index: 3100;
+  opacity: 1;
+  */
 }
-*/
+/*
 .checked:hover{
   display: flex;
   align-content:center;
@@ -573,6 +646,7 @@ transition: 400ms;
   z-index: 100;
   opacity: 1;
 }
+*/
 .anim {
   font-size: 3.5rem;
   color: white;
