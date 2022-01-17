@@ -41,6 +41,97 @@ ul {
     list-style-type: none;
     padding-inline-start: 0px;
 }
+/*
+.lds-spinner {
+  color: black;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+*/
+
+@keyframes affichage {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+
 .padtop {
     padding-top: 25px;
 }
@@ -91,6 +182,10 @@ ul {
 }
 /* index.html première partie : présentation */
 .presentation {
+
+    animation-duration: 1000ms;
+    animation-name: affichage;
+
     display: flex;
     flex-direction: column;
 }
@@ -176,6 +271,11 @@ ul {
 }
 /* section fonctionnement*/
 .fonctionnement {
+
+    animation-duration: 2000ms;
+    animation-name: affichage;
+    animation-delay: 1000ms;
+
     display: flex;
     flex-direction: column;
     margin: 30px;
@@ -244,6 +344,11 @@ ul {
 
 
 .presentation_restaurant {
+
+    animation-duration: 3000ms;
+    animation-name: affichage;
+    animation-delay: 2000ms;
+
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -325,11 +430,14 @@ ul {
   */
   opacity:0;
   z-index: 100;
-  font-size: 1.7rem;
-  color: white;
-  transition: all 400ms;
+  font-size: 1.8rem;
+  color:#FF79DA;
+
+  transition: all 2000ms ease-in-out;
+  transform-origin: bottom;
 
 }
+
 /*
 .plein:active {
 
@@ -338,7 +446,7 @@ ul {
 */
 
 .plein:hover {
-  transform: scale(1.6); opacity:1; color:#FF79DA;
+  transform: scale(1.2); opacity:1;
   }
   /*
 .icon {
@@ -404,7 +512,10 @@ transition: 400ms;
     margin-top: 370px;
     z-index: 10;
 }
+
 .item_plat {
+    animation-duration: 6s;
+    animation-name: affichage;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -435,25 +546,38 @@ transition: 400ms;
     justify-content: center;
 
 }
+.checked{
+  display:none;
+}
+/*
 .checked {
   display: flex;
   align-content:center;
   justify-content: center;
   align-items: center;
-  background-color: grey;
+  background-color: #99E2D0;
   width: 120px;
   border-radius: 0px 20px 20px 0px;
   z-index: 100;
-  opacity: 0.20
-
+  opacity: 0;
+}
+*/
+.checked:hover{
+  display: flex;
+  align-content:center;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 120px;
+  border-radius: 0px 20px 20px 0px;
+  z-index: 100;
+  opacity: 1;
 }
 .anim {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: white;
 }
-.checked:hover {
-  display:contents;
-}
+
 /*
 .lien_index {
     display: block;
