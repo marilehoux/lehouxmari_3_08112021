@@ -213,10 +213,10 @@ ul {
 }
 /* index.html première partie : présentation */
 .presentation {
-
+    /*
     animation-duration: 3000ms;
     animation-name: affichage;
-
+    */
     display: flex;
     flex-direction: column;
 }
@@ -302,11 +302,11 @@ ul {
 }
 /* section fonctionnement*/
 .fonctionnement {
-
+  /*
     animation-duration: 2000ms;
     animation-name: affichage;
     animation-delay: 1000ms;
-
+    */
     display: flex;
     flex-direction: column;
     margin: 30px;
@@ -375,11 +375,11 @@ ul {
 
 
 .presentation_restaurant {
-
+  /*
     animation-duration: 3000ms;
     animation-name: affichage;
     animation-delay: 2000ms;
-
+    */
     display: flex;
     flex-direction: column;
     width: 80%;
