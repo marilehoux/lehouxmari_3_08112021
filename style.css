@@ -435,6 +435,37 @@ ul {
     width:70%;
 }
 
+.heart_card {
+		position: relative;
+	}
+
+	.fa-heart {
+		font-size: 20px;
+	}
+
+	.fa.fa-heart {
+		position: absolute;
+		font-size: 20px;
+		color: transparent;
+		background: linear-gradient(#DC6EDA, #A15ADC);
+		background-clip: text;
+		transform: scale(0);
+		-webkit-background-clip: text;
+		transition-property: transform;
+		transition-duration: 1000ms;
+		top: 0;
+		left: 0;
+	}
+
+	.heart_card:hover > .fa.fa-heart {
+		transform: scale(1.1);
+	}
+
+	.heart_card:hover > .far.fa-heart {
+		transform: scale(0);
+		transition-delay: 1s;
+	}
+/*
 .icon {
     display: flex;
     align-items: center;
@@ -443,10 +474,10 @@ ul {
 
 .vide {
   position: absolute;
-  /*
+
     position: absolute;
     top: 100px; left:100px;
-    */
+
     z-index: 50;
     font-size: 1.8rem;
     color: black;
@@ -458,7 +489,7 @@ ul {
  position: absolute;
   /*position: absolute;
   top: 20px; left:20px;
-  */
+
   opacity:0;
   z-index: 100;
   font-size: 1.8rem;
@@ -470,18 +501,18 @@ ul {
 
 }
 
-/*
+
 .plein:active {
 
  transform:  position: relative; scale(1.8); z-index: 100; color: #FF79DA;
 }
-*/
+
 
 .plein:hover {
   transform: scaleX(1.1); opacity:1; color:#FF79DA;
 
   }
-  /*
+
 .icon {
 transition: 400ms;
 }
@@ -490,6 +521,7 @@ transition: 400ms;
     transform: color:#FF79DA;
 }
 */
+
 .footer {
     color: white;
     background-color: #4f4f4f;
@@ -563,7 +595,9 @@ transition: 400ms;
     box-shadow: 2px 1px 1px black;
 }
 .item_plat:hover {
+  /*
     animation-name: checked;
+    */
     box-shadow: 8px 6px 6px black;
     border-radius: 20px;
     /*
@@ -579,6 +613,9 @@ transition: 400ms;
       opacity: 1;
     }
     */
+}
+.item_plat:hover > div.checked{
+border: 2px solid red;
 }
 /*
 .item_plat__checked:hover{
@@ -608,21 +645,23 @@ transition: 400ms;
     justify-content: center;
 
 }
-/*
+
+
 .checked{
+  /*
   display:none;
 }
-*/
 
-.checked {
-/*
-  animation-name: checked;
-  animation-duration: 3s;
+&::after {
 */
+  animation-name: checked;
+  animation-duration: 6s;
+
   /*
   display:none;
   */
-
+  */
+  content:"";
   display: flex;
   align-content:center;
   justify-content: center;
