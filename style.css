@@ -151,11 +151,11 @@ ul {
 
 @keyframes checked{
     0% {
-        display:none;
+        scale(0);
         transform: translateX(+9999px);
     }
     100% {
-        display:content;
+        scale(1);
         transform: translateX(0);
     }
 }
@@ -440,12 +440,12 @@ ul {
 	}
 
 	.fa-heart {
-		font-size: 20px;
+		font-size: 30px;
 	}
 
 	.fa.fa-heart {
 		position: absolute;
-		font-size: 20px;
+		font-size: 30px;
 		color: transparent;
 		background: linear-gradient(#DC6EDA, #A15ADC);
 		background-clip: text;
@@ -553,7 +553,7 @@ transition: 400ms;
 }
 
 .mail:hover {
-  transform: scale(2); color: #99E2D0; font-size: 1.8rem;
+  transform: scale(1.5); color: #FF79DA ; font-size: 1.8rem;
 }
 /*
 .bg-primary : #9356DCtrès violet
@@ -576,6 +576,13 @@ transition: 400ms;
     border-radius: 40px 40px 0px 0px;;
     margin-top: 370px;
     z-index: 10;
+}
+
+.head_resto{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .item_plat {
@@ -616,6 +623,8 @@ transition: 400ms;
 }
 .item_plat:hover > div.checked{
 border: 2px solid red;
+animation-name: checked;
+animation-duration: 3000ms;
 }
 /*
 .item_plat__checked:hover{
