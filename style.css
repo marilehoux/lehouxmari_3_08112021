@@ -148,7 +148,7 @@ ul {
     opacity:1;
   }
 }
-
+/*
 @keyframes checked{
     0% {
         scale(0);
@@ -160,7 +160,7 @@ ul {
     }
 }
 
-
+*/
 
 
 .padtop {
@@ -549,11 +549,12 @@ transition: 400ms;
 .mail{
   text-decoration: none;
   color: white;
-  transition: transform 400ms;
+  transition: transform 200ms;
 }
 
 .mail:hover {
-  transform: scale(1.5); color: #FF79DA ; font-size: 1.8rem;
+  cursor: pointer;
+  transform: scale(1) ; color: #FF79DA ; font-size: 1.8rem;
 }
 /*
 .bg-primary : #9356DCtrès violet
@@ -605,7 +606,7 @@ transition: 400ms;
   /*
     animation-name: checked;
     */
-    box-shadow: 8px 6px 6px black;
+    box-shadow: 4px 2px 2px black;
     border-radius: 20px;
     /*
     &__checked {
@@ -622,9 +623,21 @@ transition: 400ms;
     */
 }
 .item_plat:hover > div.checked{
-border: 2px solid red;
+/*
 animation-name: checked;
 animation-duration: 3000ms;
+*/
+transform: scaleX(1);
+transform-origin: top;
+display:flex;
+
+
+}
+.item_plat:hover > div.checked > .anim{
+  transform: scale(2);
+  font-size: 2rem;
+
+  color: white;
 }
 /*
 .item_plat__checked:hover{
@@ -657,12 +670,26 @@ animation-duration: 3000ms;
 
 
 .checked{
+  transform: scale(0);
+  transition-duration: 4s ease;
+
+  display: none;
+  align-content:center;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 120px;
+  border-radius: 0px 20px 20px 0px;
+  z-index: 100;
+  opacity: 1;
   /*
   display:none;
+  */
 }
-
+/*
 &::after {
 */
+/*
   animation-name: checked;
   animation-duration: 6s;
 
@@ -670,7 +697,7 @@ animation-duration: 3000ms;
   display:none;
   */
   */
-  content:"";
+  /*
   display: flex;
   align-content:center;
   justify-content: center;
@@ -682,6 +709,7 @@ animation-duration: 3000ms;
   opacity: 1;
   */
 }
+*/
 /*
 .checked:hover{
   display: flex;
@@ -695,7 +723,9 @@ animation-duration: 3000ms;
   opacity: 1;
 }
 */
+
 .anim {
+  transform: scale(0)
   font-size: 3.5rem;
   color: white;
 }
