@@ -334,32 +334,40 @@ ul {
     display : flex;
     flex-direction: row;
     background-color: #d4d4d4;
-    border-radius: 25px;
+    font-size: 1.3rem;
+    border-radius: 30px;
     height: 70px;
-    width: 90%;
+    width: 95%;
     padding-left: -15px;
     align-items: center;
     justify-content: flex-start;
 }
 .item:hover {
+  /*
     display : flex;
     flex-direction: row;
-    background-color: #8bbde0;
+    */
+    background-color: #99E2D0;
+    box-shadow: 5px 3px 3px #d4d4d4 ;
+
+    /*
     border-radius: 25px;
     height: 70px;
     width: 90%;
     padding-left: -15px;
     align-items: center;
     justify-content: flex-start;
+
     color: #FF79DA;
+    */
 
 }
 .icn {
-    color:#bababa;
-    padding-right: 30px;
-    padding-left:30px;
+    color:black;
+    padding-right: 15px;
+    padding-left: 25px;
 }
-.icn:hover {
+.item:hover > .icn{
     color: #FF79DA;
 }
 /* section restaurant */
