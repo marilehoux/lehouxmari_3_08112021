@@ -151,9 +151,11 @@ ul {
 @keyframes affichage {
   from{
     opacity:0;
+    transform: scale(0);
   }
   to{
     opacity:1;
+    transform: scale(1);
   }
 }
 /*
@@ -666,21 +668,34 @@ transition: 400ms;
 }
 
 .item_plat {
-
+  /*
     animation-duration: 6s;
     animation-name: affichage;
-
+*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: space-around;
     border-radius: 20px;
     background-color: white;
+    opacity: 1;
 
 
     margin: 10px;
     padding: 0px;
     box-shadow: 2px 1px 1px black;
+}
+.entree {
+  animation-duration: 3s;
+  animation-name: affichage;
+}
+.resist {
+  animation-duration: 6s;
+  animation-name: affichage;
+}
+.dessert {
+  animation-duration: 9s;
+  animation-name: affichage;
 }
 /*
 .plat {
