@@ -1,5 +1,4 @@
 body {
-    border:3px solid black;
     margin: 0;
 }
 
@@ -228,7 +227,7 @@ ul {
     padding-top: 25px;
 }
 .paddingleft {
-    padding-left: 15px;
+    padding-left: 2%;
 }
 .texttransform {
     text-transform: uppercase;
@@ -257,11 +256,19 @@ ul {
     font-family: 'roboto';
     font-weight: bold;
     font-size: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%
 }
 .texttransformaccp {
     font-family: 'roboto';
     font-weight: 70;
     font-size: 1.1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width:100%;
 }
 .center {
     text-align: center;
@@ -815,10 +822,15 @@ animation-timing-function: ease-out;
 
 
 .plat {
-    width: 70%;
-
-
+    width: 100%;
 }
+/*
+.plat h4 p {
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+*/
 .prix {
     display: flex;
     width: 30%;
