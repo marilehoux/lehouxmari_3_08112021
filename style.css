@@ -41,6 +41,8 @@ ul {
     list-style-type: none;
     padding-inline-start: 0px;
 }
+
+
 /*
 .lds-spinner {
   color: black;
@@ -121,22 +123,26 @@ ul {
   }
 }
 */
-@@keyframes loading {
+@keyframes loading {
 
   0%{
-    opacity:0;
+    transform: scale(0);
+    opacity: 1;
+
   }
   25%{
-    opacity:0.25;
+    opacity:1;
   }
   50%{
-    opacity:0.5;
+    opacity:1;
+    transform: scale(1);
+
   }
   75%{
-    opacity:0.75;
+    opacity:0.50;
   }
   100%{
-    100%:1;
+    opacity: :0;
   }
 
 }
@@ -149,7 +155,7 @@ ul {
   }
 }
 /*
-@keyframes checked{
+@keyframes menu{
     0% {
         scale(0);
         transform: translateX(+9999px);
@@ -161,6 +167,43 @@ ul {
 }
 
 */
+@keyframes menu {
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+.loading {
+  animation-name: loading;
+  animation-timing-function: ease;
+  animation-duration: 5s;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  opacity:0;
+  transform: scale(1);
+  z-index: 200;
+  /*opacity: 1;*/
+}
+.chargement {
+  animation-name: menu;
+  animation-timing-function: ease-in-out;
+  animation-duration: 8s;
+  z-index:0;
+
+}
+.spinner {
+  font-family: 'Shrikhand', cursive;
+  font: Shrikhand;
+  font-weight: bold;
+  font-size: 5rem;
+}
 
 
 .padtop {
@@ -635,14 +678,21 @@ transition: 400ms;
 animation-name: checked;
 animation-duration: 3000ms;
 */
+transition: transform 4s;
+
+
 transform: scaleX(1);
-transform-origin: top;
+/*
+transform-origin: left ;
+*/
 display:flex;
 
 
 }
 .item_plat:hover > div.checked > .anim{
-  transform: scale(2);
+  transition: transform 4s;
+
+  transform: scale(2) rotate(0deg) ;
   font-size: 2rem;
 
   color: white;
@@ -678,8 +728,9 @@ display:flex;
 
 
 .checked{
-  transform: scale(0);
-  transition-duration: 4s ease;
+
+  /*transition: 4s ease;
+  /*transform: scale(0) ;*/
 
   display: none;
   align-content:center;
@@ -690,52 +741,20 @@ display:flex;
   border-radius: 0px 20px 20px 0px;
   z-index: 100;
   opacity: 1;
+  transition: transfrom 4s;
   /*
   display:none;
   */
 }
-/*
-&::after {
-*/
-/*
-  animation-name: checked;
-  animation-duration: 6s;
 
-  /*
-  display:none;
-  */
-  */
-  /*
-  display: flex;
-  align-content:center;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 120px;
-  border-radius: 0px 20px 20px 0px;
-  z-index: 3100;
-  opacity: 1;
-  */
-}
-*/
-/*
-.checked:hover{
-  display: flex;
-  align-content:center;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 120px;
-  border-radius: 0px 20px 20px 0px;
-  z-index: 100;
-  opacity: 1;
-}
-*/
 
 .anim {
-  transform: scale(0)
+
+  /*transform: scale(0) rotateX(180deg);*/
   font-size: 3.5rem;
   color: white;
+  transform: rotate (180deg);
+  transition: transform 4s;
 }
 
 /*
