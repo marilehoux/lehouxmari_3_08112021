@@ -729,7 +729,7 @@ animation-timing-function: ease-out;
   */
   font-size: 3.5rem;
   color: white;
-  animation: tourne 1000ms ease;
+  animation: tourne 1000ms ease-out;
 
 }
 .item_plat:hover > .plat {
@@ -816,7 +816,7 @@ animation-timing-function: ease-out;
 
 .plat {
     width: 70%;
-  
+
 
 }
 .prix {
