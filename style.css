@@ -838,6 +838,9 @@ animation-timing-function: ease-out;
 
 .plat {
     width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 /*
 .plat h4 p {
