@@ -481,7 +481,7 @@ ul {
     border-radius: 20px ;
     background-color: white;
     justify-content: center;
-    box-shadow: 5px 4px 3px #E8E8E8;
+    box-shadow: 4px 2px 2px #E8E8E8;
     text-decoration: none;
     color: black;
     margin: 10px;
@@ -509,7 +509,7 @@ ul {
     text-decoration: none;
 }
 .presentation_restaurant:hover {
-    box-shadow: 10px 6px 6px #E8E8E8;
+    box-shadow: 5px 3px 3px #C0C0C0;
 
 }
 .restaurant {
@@ -700,12 +700,12 @@ transition: 400ms;
     border-radius: 20px;
     background-color: white;
     opacity: 1;
+    box-shadow: 5px 3px 3px #D8D8D8;
 
 
     margin: 10px;
     padding: 0px;
-    box-shadow: 2px 1px 1px black;
-}
+  }
 .entree {
   animation-duration: 3s;
   animation-name: affichage;
@@ -728,7 +728,8 @@ transition: 400ms;
   /*
     animation-name: checked;
     */
-    box-shadow: 4px 2px 2px black;
+    box-shadow: 5px 3px 3px #C0C0C0;
+
     border-radius: 20px;
     /*
     &__checked {
