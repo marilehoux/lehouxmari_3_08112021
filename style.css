@@ -9,7 +9,7 @@ h1 {
     font-size: 3rem;
 }
 h2 {
-    font-family: 'roboto', sans sans-serif;
+    font-family: 'roboto',  sans-serif;
     font-weight: bold;
     font-size: 1.8rem;
     /*padding: 15px;*/
@@ -20,9 +20,17 @@ h3 {
     font-size: 1.5rem;
     padding: 0px;
 }
+h4 {
+  font-family: 'roboto', sans-serif;
+
+  font-weight: normal;
+  font-size: 1rem;
+}
 p {
-    font-family: 'roboto';
-    font-size: 1.2rem;
+    font-family: 'roboto', sans-serif;
+
+    font-weight: inherit;
+    font-size: 1rem;
     padding: 0px;
 }
 header {
@@ -256,8 +264,10 @@ ul {
 }
 .texttransfoplat {
     font-family: 'roboto';
+
     font-weight: bold;
-    font-size: 1.2rem;
+
+    font-size: 1rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -265,8 +275,11 @@ ul {
 }
 .texttransformaccp {
     font-family: 'roboto';
+    /*
     font-weight: 70;
-    font-size: 1.1rem;
+    */
+    font-weight: 50;
+    font-size: 1rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -295,7 +308,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #bababa;
+    background-color: #E8E8E8;
     align-items: baseline;
 }
 .localisation p {
@@ -309,18 +322,22 @@ ul {
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    background-color:  #d4d4d4;
+    background-color: #F8F8F8;
     align-items: center;
 }
 .background_grey {
-  background-color:  #d4d4d4;
+  background-color: #F8F8F8;
 }
 .position_titre {
   margin: 0px;
   padding: 15px 30px 30px 30px;
 }
 .btn_secondary {
+  /*
+        background-color: linear-gradient (#ff91e1,#FF79DA);
+*/
         background-color: #FF79DA;
+
         color: white;
         border: none;
 }
@@ -337,7 +354,7 @@ ul {
 }
 .btn_center:hover {
   cursor: pointer;
-  transform: scale(1.15); box-shadow: 4px 2px 2px  black; background-color: #ff91e1;
+  transform: scale(1.15); box-shadow: 4px 2px 2px  #D3D3D3; background-color: #f257c7;
 
 }
 .btn_rond {
@@ -403,7 +420,7 @@ ul {
 .item  {
     display : flex;
     flex-direction: row;
-    background-color: #d4d4d4;
+    background-color: #F8F8F8;
     font-size: 1.3rem;
     border-radius: 30px;
     height: 70px;
@@ -464,7 +481,7 @@ ul {
     border-radius: 20px ;
     background-color: white;
     justify-content: center;
-    box-shadow: 5px 3px 3px black;
+    box-shadow: 5px 4px 3px #E8E8E8;
     text-decoration: none;
     color: black;
     margin: 10px;
@@ -492,7 +509,7 @@ ul {
     text-decoration: none;
 }
 .presentation_restaurant:hover {
-    box-shadow: 10px 6px 6px black;
+    box-shadow: 10px 6px 6px #E8E8E8;
 
 }
 .restaurant {
@@ -644,14 +661,18 @@ transition: 400ms;
     object-fit: cover;
     width: 100%;
     z-index: -1;
-    height: 385px;
+    height: 410px;
     position: absolute;
-
 }
+
+.image_restaurant   {
+  margin: 0;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
-    background-color: #bababa;
+    background-color: #E8E8E8;
     border-radius: 40px 40px 0px 0px;;
     margin-top: 370px;
     z-index: 10;
@@ -749,7 +770,7 @@ animation-timing-function: ease-out;
   transition: transform 4s;
   transform: scale(2) rotate(0deg) ;
   */
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   color: white;
   animation: tourne 1000ms ease-out;
 
@@ -816,7 +837,7 @@ animation-timing-function: ease-out;
   border-radius: 0px 20px 20px 0px;
   z-index: 100;
   opacity: 1;
-  transition: transfrom 4s;
+  transition: transform 4s;
   /*
   display:none;
   */
@@ -886,6 +907,8 @@ animation-timing-function: ease-out;
     align-items: baseline;
     justify-content: center;
     padding-left: 0px;
+    background-color: #E8E8E8;
+
 }
 
 .special_titre {
