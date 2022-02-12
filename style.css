@@ -348,7 +348,7 @@ ul {
 .btn_center {
     margin: 30px;
     align-items: center;
-    box-shadow:  2px 1px 1px  grey;
+    box-shadow:  2px 1px 1px  #C8C8C8;
     transition: transform 400ms;
 
 }
@@ -477,6 +477,7 @@ ul {
     */
     display: flex;
     flex-direction: column;
+    position:relative;
     width: 80%;
     border-radius: 20px ;
     background-color: white;
@@ -488,6 +489,42 @@ ul {
 
 
 }
+.etiquette {
+  position: absolute;
+  top:20px;
+  left: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #99E2D0;
+  color: #5a9c8b;
+}
+/*
+.presentation_restaurant > .etiquette {
+
+  position: absolute;
+  top:20px;
+  left:20px;
+  background
+  transition: transform 400ms;
+
+
+}
+*/
+  /*
+  transform: scale (0);
+  animation-name: affichage;
+  animation-duration: 30s;
+  animation-delay: 10s;
+  */
+  /*
+.presentation_restaurant:hover > .etiquette {
+  transform:scale(1);
+  display: flex;
+  z-index:50;
+}
+*/
+
+
 /*
 .presentation_restaurant a {
     display:block;
@@ -967,12 +1004,18 @@ animation-timing-function: ease-out;
 .presentation_restaurant {
 width : 450px;
 }
+
 .list_plat {
   display:flex;
   flex-direction: row;
 }
 .item_plat {
   width:33%;
+}
+
+.etiquette {
+
+  left: 75%;
 }
 /*
 .menu {
@@ -991,4 +1034,6 @@ width : 450px;
   .presentation_restaurant {
   width : 600px;
   }
+
+
 }
