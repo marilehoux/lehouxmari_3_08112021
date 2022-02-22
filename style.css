@@ -1013,13 +1013,6 @@ animation-timing-function: ease-out;
 width : 450px;
 }
 
-.list_plat {
-  display:flex;
-  flex-direction: row;
-}
-.item_plat {
-  width:33%;
-}
 
 .etiquette {
 
@@ -1043,5 +1036,13 @@ width : 450px;
   width : 600px;
   }
 
+  .list_plat {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .item_plat {
+    width:400px;
+  }
 
 }
