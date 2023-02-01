@@ -1,15 +1,13 @@
 # lehouxmari_3_08112021
 Projet 3 openclassroom 'oh my food"
 
-Une page accueil
-Affichage de la localisation des restaurants. À terme il sera possible de choisir sa
-localisation pour trouver des restaurants proches d’un certain lieu.
+Une page accueil avec loader
+Affichage de la localisation des restaurants.
+À terme il sera possible de choisir sa localisation pour trouver des restaurants proches d’un certain lieu.
 Une courte présentation de l’entreprise.
 Une section contenant les 4 menus sous forme cartes.
 Au clic sur la carte,
 l’utilisateur est redirigé vers la page du menu.
-
-
 4 pages contenant chacune le menu d’un restaurant
 
 Footer:
@@ -26,6 +24,8 @@ Logo et titres : Shrikhand
 Textes : Roboto
 
 Couleurs
-Primaire: violet #9356DC
-Secondaire: rose #FF9DA
+Primaire:  #9356DC
+Secondaire:  #FF9DA
 Tertiaire : #99E2D0
+
+voir la page : https://marilehoux.github.io/lehouxmari_3_08112021/
