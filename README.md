@@ -1,4 +1,5 @@
 # lehouxmari_3_08112021
+
 Projet 3 openclassroom 'oh my food"
 
 Une page accueil avec loader
@@ -28,4 +29,4 @@ Primaire:  #9356DC
 Secondaire:  #FF9DA
 Tertiaire : #99E2D0
 
-voir la page : https://marilehoux.github.io/lehouxmari_3_08112021/
+voir la page : <https://marilehoux.github.io/lehouxmari_3_08112021/>
